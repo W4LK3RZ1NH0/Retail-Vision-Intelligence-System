@@ -1,0 +1,44 @@
+{
+  "rules": [
+    {
+      "natural_language": "Quero ser alertado quando a prateleira inferior de qualquer zona estiver mais de 30% vazia.",
+      "expected_valid": true,
+      "expected_ambiguous": false
+    },
+    {
+      "natural_language": "Avisa-me quando a prateleira estiver vazia.",
+      "expected_valid": false,
+      "expected_ambiguous": true
+    },
+    {
+      "natural_language": "Na zona Z_S1, se não houver produtos de laticínios visíveis, é crítico.",
+      "expected_valid": true,
+      "expected_ambiguous": false
+    },
+    {
+      "natural_language": "Quando o fill rate de uma prateleira cair abaixo de 60% entre as 10h e as 13h, avisa-me mas não é urgente.",
+      "expected_valid": true,
+      "expected_ambiguous": false
+    },
+    {
+      "natural_language": "Se um produto estiver tombado, considera sempre severidade alta.",
+      "expected_valid": true,
+      "expected_ambiguous": false
+    },
+    {
+      "natural_language": "Z_S3 critical empty_shelf",
+      "expected_valid": true,
+      "expected_ambiguous": false
+    },
+    {
+      "natural_language": "prateleira meia cheia",
+      "expected_valid": false,
+      "expected_ambiguous": true
+    },
+    {
+      "natural_language": "marca própria ok tudo bem",
+      "expected_valid": false,
+      "expected_ambiguous": false
+    }
+  ]
+}

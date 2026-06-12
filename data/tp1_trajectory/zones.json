@@ -1,0 +1,368 @@
+{
+  "meta": {
+    "store": "Loja de Retalho — Planta Esquemática",
+    "description": "Mapa de zonas com adjacências e tempos mínimos de deslocação. Transições com gap inferior ao walk_seconds entre zonas não adjacentes são fisicamente implausíveis para a mesma pessoa.",
+    "zone_types": {
+      "entrance": "Porta de acesso (Z_E1, Z_E2)",
+      "checkout": "Caixas registadoras (Z_C1, Z_C2, Z_C3)",
+      "checkout_exit": "Corredor de saída após pagamento (Z_CK)",
+      "navigation": "Corredor de circulação interior (Z_N1–Z_N10)",
+      "product_section": "Área de exposição e venda de produto (Z_S1–Z_S7)"
+    },
+    "layout_note": "Forma rectangular. Entradas a Norte (Z_E1, Z_E2). Caixas imediatamente a Sul das entradas. Corredores de navegação no interior. Secções de produto nas paredes laterais e fundo. Z_CK é o corredor de saída a Sul após pagamento."
+  },
+  "zones": {
+    "Z_E1": {
+      "type": "entrance",
+      "description": "Entrada principal Norte — lado esquerdo",
+      "adjacent": [
+        "Z_C1",
+        "Z_C2",
+        "Z_N1"
+      ],
+      "walk_seconds": {
+        "Z_C1": 8,
+        "Z_C2": 14,
+        "Z_N1": 20
+      }
+    },
+    "Z_E2": {
+      "type": "entrance",
+      "description": "Entrada principal Norte — lado direito",
+      "adjacent": [
+        "Z_C2",
+        "Z_C3",
+        "Z_N2"
+      ],
+      "walk_seconds": {
+        "Z_C2": 8,
+        "Z_C3": 14,
+        "Z_N2": 20
+      }
+    },
+    "Z_C1": {
+      "type": "checkout",
+      "description": "Caixas registadoras — bloco esquerdo (3 caixas)",
+      "adjacent": [
+        "Z_E1",
+        "Z_C2",
+        "Z_N1",
+        "Z_CK"
+      ],
+      "walk_seconds": {
+        "Z_E1": 8,
+        "Z_C2": 10,
+        "Z_N1": 15,
+        "Z_CK": 20
+      }
+    },
+    "Z_C2": {
+      "type": "checkout",
+      "description": "Caixas registadoras — bloco central (4 caixas)",
+      "adjacent": [
+        "Z_E1",
+        "Z_E2",
+        "Z_C1",
+        "Z_C3",
+        "Z_N2",
+        "Z_CK"
+      ],
+      "walk_seconds": {
+        "Z_E1": 14,
+        "Z_E2": 8,
+        "Z_C1": 10,
+        "Z_C3": 10,
+        "Z_N2": 15,
+        "Z_CK": 18
+      }
+    },
+    "Z_C3": {
+      "type": "checkout",
+      "description": "Caixas registadoras — bloco direito (3 caixas)",
+      "adjacent": [
+        "Z_E2",
+        "Z_C2",
+        "Z_N3",
+        "Z_CK"
+      ],
+      "walk_seconds": {
+        "Z_E2": 14,
+        "Z_C2": 10,
+        "Z_N3": 15,
+        "Z_CK": 20
+      }
+    },
+    "Z_CK": {
+      "type": "checkout_exit",
+      "description": "Zona de saída após pagamento — corredor Sul",
+      "adjacent": [
+        "Z_C1",
+        "Z_C2",
+        "Z_C3"
+      ],
+      "walk_seconds": {
+        "Z_C1": 20,
+        "Z_C2": 18,
+        "Z_C3": 20
+      }
+    },
+    "Z_N1": {
+      "type": "navigation",
+      "description": "Corredor — ala esquerda, linha 1",
+      "adjacent": [
+        "Z_C1",
+        "Z_N2",
+        "Z_N4",
+        "Z_S1",
+        "Z_E1"
+      ],
+      "walk_seconds": {
+        "Z_C1": 15,
+        "Z_N2": 20,
+        "Z_N4": 18,
+        "Z_S1": 25,
+        "Z_E1": 20
+      }
+    },
+    "Z_N2": {
+      "type": "navigation",
+      "description": "Corredor — centro, linha 1",
+      "adjacent": [
+        "Z_C2",
+        "Z_N1",
+        "Z_N3",
+        "Z_N5",
+        "Z_S2",
+        "Z_E2"
+      ],
+      "walk_seconds": {
+        "Z_C2": 15,
+        "Z_N1": 20,
+        "Z_N3": 20,
+        "Z_N5": 18,
+        "Z_S2": 25,
+        "Z_E2": 20
+      }
+    },
+    "Z_N3": {
+      "type": "navigation",
+      "description": "Corredor — ala direita, linha 1",
+      "adjacent": [
+        "Z_C3",
+        "Z_N2",
+        "Z_N6",
+        "Z_S3"
+      ],
+      "walk_seconds": {
+        "Z_C3": 15,
+        "Z_N2": 20,
+        "Z_N6": 18,
+        "Z_S3": 25
+      }
+    },
+    "Z_N4": {
+      "type": "navigation",
+      "description": "Corredor — ala esquerda, linha 2",
+      "adjacent": [
+        "Z_N1",
+        "Z_N5",
+        "Z_N7",
+        "Z_S1",
+        "Z_S4"
+      ],
+      "walk_seconds": {
+        "Z_N1": 18,
+        "Z_N5": 18,
+        "Z_N7": 18,
+        "Z_S1": 20,
+        "Z_S4": 20
+      }
+    },
+    "Z_N5": {
+      "type": "navigation",
+      "description": "Corredor — centro, linha 2",
+      "adjacent": [
+        "Z_N2",
+        "Z_N4",
+        "Z_N6",
+        "Z_N8",
+        "Z_S5"
+      ],
+      "walk_seconds": {
+        "Z_N2": 18,
+        "Z_N4": 18,
+        "Z_N6": 18,
+        "Z_N8": 18,
+        "Z_S5": 20
+      }
+    },
+    "Z_N6": {
+      "type": "navigation",
+      "description": "Corredor — ala direita, linha 2",
+      "adjacent": [
+        "Z_N3",
+        "Z_N5",
+        "Z_N9",
+        "Z_S6"
+      ],
+      "walk_seconds": {
+        "Z_N3": 18,
+        "Z_N5": 18,
+        "Z_N9": 18,
+        "Z_S6": 20
+      }
+    },
+    "Z_N7": {
+      "type": "navigation",
+      "description": "Corredor — ala esquerda, fundo",
+      "adjacent": [
+        "Z_N4",
+        "Z_N8",
+        "Z_N10",
+        "Z_S4"
+      ],
+      "walk_seconds": {
+        "Z_N4": 18,
+        "Z_N8": 18,
+        "Z_N10": 20,
+        "Z_S4": 20
+      }
+    },
+    "Z_N8": {
+      "type": "navigation",
+      "description": "Corredor — centro, fundo",
+      "adjacent": [
+        "Z_N5",
+        "Z_N7",
+        "Z_N9",
+        "Z_N10"
+      ],
+      "walk_seconds": {
+        "Z_N5": 18,
+        "Z_N7": 18,
+        "Z_N9": 18,
+        "Z_N10": 18
+      }
+    },
+    "Z_N9": {
+      "type": "navigation",
+      "description": "Corredor — ala direita, fundo",
+      "adjacent": [
+        "Z_N6",
+        "Z_N8",
+        "Z_N10",
+        "Z_S7"
+      ],
+      "walk_seconds": {
+        "Z_N6": 18,
+        "Z_N8": 18,
+        "Z_N10": 20,
+        "Z_S7": 20
+      }
+    },
+    "Z_N10": {
+      "type": "navigation",
+      "description": "Corredor traseiro — parede Sul",
+      "adjacent": [
+        "Z_N7",
+        "Z_N8",
+        "Z_N9",
+        "Z_S4",
+        "Z_S5",
+        "Z_S6",
+        "Z_S7"
+      ],
+      "walk_seconds": {
+        "Z_N7": 20,
+        "Z_N8": 18,
+        "Z_N9": 20,
+        "Z_S4": 15,
+        "Z_S5": 15,
+        "Z_S6": 15,
+        "Z_S7": 15
+      }
+    },
+    "Z_S1": {
+      "type": "product_section",
+      "description": "Secção de frescos e lacticínios",
+      "adjacent": [
+        "Z_N1",
+        "Z_N4"
+      ],
+      "walk_seconds": {
+        "Z_N1": 25,
+        "Z_N4": 20
+      }
+    },
+    "Z_S2": {
+      "type": "product_section",
+      "description": "Secção de padaria e pastelaria",
+      "adjacent": [
+        "Z_N2"
+      ],
+      "walk_seconds": {
+        "Z_N2": 25
+      }
+    },
+    "Z_S3": {
+      "type": "product_section",
+      "description": "Secção de talho e charcutaria",
+      "adjacent": [
+        "Z_N3"
+      ],
+      "walk_seconds": {
+        "Z_N3": 25
+      }
+    },
+    "Z_S4": {
+      "type": "product_section",
+      "description": "Secção de produtos de higiene e limpeza",
+      "adjacent": [
+        "Z_N4",
+        "Z_N7",
+        "Z_N10"
+      ],
+      "walk_seconds": {
+        "Z_N4": 20,
+        "Z_N7": 20,
+        "Z_N10": 15
+      }
+    },
+    "Z_S5": {
+      "type": "product_section",
+      "description": "Secção de bebidas e conservas",
+      "adjacent": [
+        "Z_N5",
+        "Z_N10"
+      ],
+      "walk_seconds": {
+        "Z_N5": 20,
+        "Z_N10": 15
+      }
+    },
+    "Z_S6": {
+      "type": "product_section",
+      "description": "Secção de vinhos e destilados",
+      "adjacent": [
+        "Z_N6",
+        "Z_N10"
+      ],
+      "walk_seconds": {
+        "Z_N6": 20,
+        "Z_N10": 15
+      }
+    },
+    "Z_S7": {
+      "type": "product_section",
+      "description": "Secção de produtos congelados",
+      "adjacent": [
+        "Z_N9",
+        "Z_N10"
+      ],
+      "walk_seconds": {
+        "Z_N9": 20,
+        "Z_N10": 15
+      }
+    }
+  }
+}

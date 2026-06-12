@@ -1,0 +1,869 @@
+{
+    "meta": {
+        "store": "Loja de Retalho — Planta Esquemática",
+        "description": "Mapa de zonas com adjacências e tempos mínimos de deslocação. Transições com gap inferior ao walk_seconds entre zonas não adjacentes são fisicamente implausíveis para a mesma pessoa.",
+        "zone_types": {
+            "entrance": "Porta de acesso (Z_E1, Z_E2)",
+            "checkout": "Caixas registadoras (Z_C1, Z_C2, Z_C3)",
+            "checkout_exit": "Corredor de saída após pagamento (Z_CK)",
+            "navigation": "Corredor de circulação interior (Z_N1–Z_N10)",
+            "product_section": "Área de exposição e venda de produto (Z_S1–Z_S7)"
+        },
+        "layout_note": "Forma rectangular. Entradas a Norte (Z_E1, Z_E2). Caixas imediatamente a Sul das entradas. Corredores de navegação no interior. Secções de produto nas paredes laterais e fundo. Z_CK é o corredor de saída a Sul após pagamento."
+    },
+    "trafego": {
+        "unique_visitors_per_day": {
+            "2025-03-10": 3210,
+            "2025-03-11": 2837,
+            "2025-03-12": 3325,
+            "2025-03-13": 3485,
+            "2025-03-14": 3212,
+            "2025-03-15": 4685,
+            "2025-03-16": 4403
+        },
+        "unique_visitors_per_hour": {
+            "9": 1092,
+            "10": 1675,
+            "11": 2291,
+            "12": 2584,
+            "13": 2471,
+            "14": 2030,
+            "15": 1881,
+            "16": 2068,
+            "17": 2629,
+            "18": 2384,
+            "19": 2232,
+            "20": 1490,
+            "21": 330
+        },
+        "weekly_affluence_distribution": {
+            "Friday": 3212,
+            "Monday": 3210,
+            "Saturday": 4685,
+            "Sunday": 4403,
+            "Thursday": 3485,
+            "Tuesday": 2837,
+            "Wednesday": 3325
+        },
+        "avg_visit_time_store_seconds": 398.031124537902
+    },
+    "zona": {
+        "traffic_per_zone": {
+            "Z_C1": 5640,
+            "Z_C2": 5470,
+            "Z_C3": 4348,
+            "Z_CK": 4263,
+            "Z_E1": 5181,
+            "Z_E2": 4917,
+            "Z_N1": 1522,
+            "Z_N10": 1786,
+            "Z_N2": 1493,
+            "Z_N3": 1530,
+            "Z_N4": 1295,
+            "Z_N5": 1903,
+            "Z_N6": 1590,
+            "Z_N7": 1351,
+            "Z_N8": 1700,
+            "Z_N9": 1642,
+            "Z_S1": 926,
+            "Z_S2": 539,
+            "Z_S3": 1181,
+            "Z_S4": 926,
+            "Z_S5": 1207,
+            "Z_S6": 777,
+            "Z_S7": 657
+        },
+        "avg_dwell_time_per_zone_seconds": {
+            "Z_C1": 26.32395292261161,
+            "Z_C2": 26.777036048064087,
+            "Z_C3": 25.7649184389841,
+            "Z_CK": 211.55125498475252,
+            "Z_E1": 14.010314975133543,
+            "Z_E2": 13.94964982017793,
+            "Z_N1": 204.86424581005588,
+            "Z_N10": 211.74603174603175,
+            "Z_N2": 206.9185360094451,
+            "Z_N3": 204.76083467094702,
+            "Z_N4": 205.7400513478819,
+            "Z_N5": 210.0168429298864,
+            "Z_N6": 207.814,
+            "Z_N7": 207.16136495083865,
+            "Z_N8": 205.10613524406628,
+            "Z_N9": 212.5598310652276,
+            "Z_S1": 203.46543778801842,
+            "Z_S2": 203.79357021996617,
+            "Z_S3": 210.2046227056424,
+            "Z_S4": 206.98173515981736,
+            "Z_S5": 117.82435897435897,
+            "Z_S6": 204.36907449209932,
+            "Z_S7": 198.56608811748998
+        },
+        "stopping_rate_per_zone": {
+            "Z_C1": 0.999645390070922,
+            "Z_C2": 0.9996343692870201,
+            "Z_C3": 0.999540018399264,
+            "Z_CK": 0.9739619985925405,
+            "Z_E1": 1.0,
+            "Z_E2": 1.0,
+            "Z_N1": 0.973718791064389,
+            "Z_N10": 0.9568868980963046,
+            "Z_N2": 0.9785666443402545,
+            "Z_N3": 0.9738562091503268,
+            "Z_N4": 0.9722007722007722,
+            "Z_N5": 0.9611140304781923,
+            "Z_N6": 0.969811320754717,
+            "Z_N7": 0.9755736491487786,
+            "Z_N8": 0.9723529411764706,
+            "Z_N9": 0.9591961023142509,
+            "Z_S1": 0.9838012958963283,
+            "Z_S2": 0.9851576994434137,
+            "Z_S3": 0.9703640982218459,
+            "Z_S4": 0.980561555075594,
+            "Z_S5": 0.9975144987572494,
+            "Z_S6": 0.9897039897039897,
+            "Z_S7": 0.9939117199391172
+        },
+        "top_10_zone_sequences": {
+            "Z_C2": 17976,
+            "Z_C1": 15209,
+            "Z_C3": 9686,
+            "Z_C2 -> Z_C1": 8283,
+            "Z_C1 -> Z_C2": 7870,
+            "Z_C2 -> Z_C3": 7331,
+            "Z_C3 -> Z_C2": 5892,
+            "Z_E1": 5429,
+            "Z_E2": 5283,
+            "Z_CK": 4263
+        }
+    },
+    "funil": {
+        "total_store_entries": 25157,
+        "visitors_reached_per_zone": {
+            "Z_C1": 5640,
+            "Z_C2": 5470,
+            "Z_C3": 4348,
+            "Z_CK": 4263,
+            "Z_E1": 5181,
+            "Z_E2": 4917,
+            "Z_N1": 1522,
+            "Z_N10": 1786,
+            "Z_N2": 1493,
+            "Z_N3": 1530,
+            "Z_N4": 1295,
+            "Z_N5": 1903,
+            "Z_N6": 1590,
+            "Z_N7": 1351,
+            "Z_N8": 1700,
+            "Z_N9": 1642,
+            "Z_S1": 926,
+            "Z_S2": 539,
+            "Z_S3": 1181,
+            "Z_S4": 926,
+            "Z_S5": 1207,
+            "Z_S6": 777,
+            "Z_S7": 657
+        },
+        "checkout_conversion_rate": 0.16945581746631155,
+        "no_checkout_profile": {
+            "gender_distribution": {
+                "M": 10675,
+                "F": 10219
+            },
+            "age_distribution": {
+                "middle_aged": 5273,
+                "adult": 5234,
+                "young_adult": 3877,
+                "senior": 2800,
+                "teenager": 2053,
+                "child": 1657
+            }
+        }
+    },
+    "demografico": {
+        "gender_distribution_by_hour": {
+            "9": {
+                "F": 1684,
+                "M": 1644
+            },
+            "10": {
+                "F": 2935,
+                "M": 2872
+            },
+            "11": {
+                "M": 4233,
+                "F": 4203
+            },
+            "12": {
+                "M": 4727,
+                "F": 4548
+            },
+            "13": {
+                "M": 4426,
+                "F": 4039
+            },
+            "14": {
+                "M": 3621,
+                "F": 2973
+            },
+            "15": {
+                "M": 3125,
+                "F": 2883
+            },
+            "16": {
+                "F": 3927,
+                "M": 3516
+            },
+            "17": {
+                "M": 4760,
+                "F": 4607
+            },
+            "18": {
+                "M": 4608,
+                "F": 4089
+            },
+            "19": {
+                "M": 3897,
+                "F": 3350
+            },
+            "20": {
+                "M": 2148,
+                "F": 1970
+            },
+            "21": {
+                "M": 331,
+                "F": 244
+            }
+        },
+        "age_distribution_by_hour": {
+            "9": {
+                "adult": 1105,
+                "middle_aged": 855,
+                "young_adult": 565,
+                "senior": 402,
+                "child": 214,
+                "teenager": 187
+            },
+            "10": {
+                "adult": 2088,
+                "middle_aged": 1390,
+                "young_adult": 947,
+                "senior": 645,
+                "teenager": 385,
+                "child": 352
+            },
+            "11": {
+                "adult": 2827,
+                "middle_aged": 2273,
+                "young_adult": 1430,
+                "senior": 744,
+                "teenager": 692,
+                "child": 470
+            },
+            "12": {
+                "adult": 3012,
+                "middle_aged": 2488,
+                "young_adult": 1519,
+                "senior": 858,
+                "teenager": 753,
+                "child": 645
+            },
+            "13": {
+                "middle_aged": 2512,
+                "adult": 2292,
+                "young_adult": 1627,
+                "senior": 958,
+                "teenager": 561,
+                "child": 515
+            },
+            "14": {
+                "adult": 2194,
+                "middle_aged": 1914,
+                "young_adult": 1165,
+                "senior": 475,
+                "teenager": 441,
+                "child": 405
+            },
+            "15": {
+                "middle_aged": 1602,
+                "adult": 1568,
+                "young_adult": 1330,
+                "senior": 687,
+                "teenager": 467,
+                "child": 354
+            },
+            "16": {
+                "adult": 2341,
+                "middle_aged": 1898,
+                "young_adult": 1647,
+                "senior": 700,
+                "teenager": 578,
+                "child": 279
+            },
+            "17": {
+                "adult": 2647,
+                "middle_aged": 2264,
+                "young_adult": 1875,
+                "senior": 1131,
+                "teenager": 954,
+                "child": 496
+            },
+            "18": {
+                "adult": 2757,
+                "middle_aged": 2659,
+                "young_adult": 1478,
+                "senior": 774,
+                "teenager": 579,
+                "child": 450
+            },
+            "19": {
+                "adult": 2195,
+                "middle_aged": 2038,
+                "young_adult": 1460,
+                "senior": 729,
+                "teenager": 422,
+                "child": 403
+            },
+            "20": {
+                "adult": 1330,
+                "middle_aged": 1115,
+                "young_adult": 812,
+                "senior": 324,
+                "teenager": 274,
+                "child": 263
+            },
+            "21": {
+                "adult": 220,
+                "middle_aged": 139,
+                "young_adult": 110,
+                "senior": 52,
+                "teenager": 33,
+                "child": 21
+            }
+        },
+        "avg_dwell_by_gender_and_zone": {
+            "F": {
+                "Z_C1": 26.266037735849057,
+                "Z_C2": 26.813095921883974,
+                "Z_C3": 25.526814559552015,
+                "Z_CK": 211.610551558753,
+                "Z_E1": 14.125231567247129,
+                "Z_E2": 14.035074045206548,
+                "Z_N1": 196.2258064516129,
+                "Z_N10": 207.4169381107492,
+                "Z_N2": 199.3066037735849,
+                "Z_N3": 203.58163265306123,
+                "Z_N4": 201.9124183006536,
+                "Z_N5": 205.26470588235293,
+                "Z_N6": 206.71974522292993,
+                "Z_N7": 206.98891625615764,
+                "Z_N8": 201.90656799259943,
+                "Z_N9": 212.11954459203037,
+                "Z_S1": 211.6469465648855,
+                "Z_S2": 200.79285714285714,
+                "Z_S3": 207.89625360230548,
+                "Z_S4": 204.23272727272726,
+                "Z_S5": 117.5081081081081,
+                "Z_S6": 201.20537897310513,
+                "Z_S7": 198.02445652173913
+            },
+            "M": {
+                "Z_C1": 26.37912440621389,
+                "Z_C2": 26.743177650738865,
+                "Z_C3": 25.98413642673012,
+                "Z_CK": 211.4944903581267,
+                "Z_E1": 13.896703296703297,
+                "Z_E2": 13.868973132131027,
+                "Z_N1": 213.58024691358025,
+                "Z_N10": 215.86068111455108,
+                "Z_N2": 214.548463356974,
+                "Z_N3": 205.8145896656535,
+                "Z_N4": 209.43253467843633,
+                "Z_N5": 214.63320463320463,
+                "Z_N6": 208.7882797731569,
+                "Z_N7": 207.31406761177755,
+                "Z_N8": 208.10850694444446,
+                "Z_N9": 212.9907149489322,
+                "Z_S1": 195.8235294117647,
+                "Z_S2": 206.4951768488746,
+                "Z_S3": 212.26640926640925,
+                "Z_S4": 209.7559633027523,
+                "Z_S5": 118.10975609756098,
+                "Z_S6": 207.0817610062893,
+                "Z_S7": 199.08923884514437
+            }
+        },
+        "avg_dwell_by_age_and_zone": {
+            "adult": {
+                "Z_C1": 27.03544248749728,
+                "Z_C2": 27.478014184397164,
+                "Z_C3": 26.420494699646643,
+                "Z_CK": 215.34343434343435,
+                "Z_E1": 14.020195439739414,
+                "Z_E2": 14.090190915075707,
+                "Z_N1": 200.69896193771626,
+                "Z_N10": 211.47664670658682,
+                "Z_N2": 210.82776801405976,
+                "Z_N3": 201.21753246753246,
+                "Z_N4": 201.4822429906542,
+                "Z_N5": 207.69617224880383,
+                "Z_N6": 206.48211508553655,
+                "Z_N7": 204.26725663716815,
+                "Z_N8": 204.88668555240793,
+                "Z_N9": 209.75260804769002,
+                "Z_S1": 200.77077363896848,
+                "Z_S2": 203.98979591836735,
+                "Z_S3": 209.25862068965517,
+                "Z_S4": 195.86819484240687,
+                "Z_S5": 120.77843137254902,
+                "Z_S6": 207.15210355987054,
+                "Z_S7": 187.45418326693226
+            },
+            "child": {
+                "Z_C1": 24.3150826446281,
+                "Z_C2": 24.129258517034067,
+                "Z_C3": 24.303571428571427,
+                "Z_CK": 207.71764705882353,
+                "Z_E1": 13.829145728643216,
+                "Z_E2": 13.234299516908212,
+                "Z_N1": 128.80769230769232,
+                "Z_N10": 126.94117647058823,
+                "Z_N2": 127.30434782608695,
+                "Z_N3": 119.50649350649351,
+                "Z_N4": 129.07246376811594,
+                "Z_N5": 115.97321428571429,
+                "Z_N6": 119.49462365591398,
+                "Z_N7": 134.08333333333334,
+                "Z_N8": 132.62962962962962,
+                "Z_N9": 121.97142857142858,
+                "Z_S1": 137.6875,
+                "Z_S2": 123.03448275862068,
+                "Z_S3": 117.44594594594595,
+                "Z_S4": 128.9607843137255,
+                "Z_S5": 73.65384615384616,
+                "Z_S6": 131.37142857142857,
+                "Z_S7": 134.93939393939394
+            },
+            "middle_aged": {
+                "Z_C1": 27.045116509667825,
+                "Z_C2": 27.543071921982932,
+                "Z_C3": 26.295599849567505,
+                "Z_CK": 215.04297994269342,
+                "Z_E1": 13.997063142437591,
+                "Z_E2": 14.226489028213166,
+                "Z_N1": 226.40316205533597,
+                "Z_N10": 234.98603351955308,
+                "Z_N2": 227.7426778242678,
+                "Z_N3": 222.68500948766604,
+                "Z_N4": 223.63205417607224,
+                "Z_N5": 230.57356948228883,
+                "Z_N6": 236.96383363471972,
+                "Z_N7": 226.7012195121951,
+                "Z_N8": 222.75079365079364,
+                "Z_N9": 244.9016393442623,
+                "Z_S1": 227.86912751677852,
+                "Z_S2": 227.07926829268294,
+                "Z_S3": 237.4502262443439,
+                "Z_S4": 236.25641025641025,
+                "Z_S5": 127.47544642857143,
+                "Z_S6": 221.4494382022472,
+                "Z_S7": 230.4229074889868
+            },
+            "senior": {
+                "Z_C1": 24.760700389105057,
+                "Z_C2": 25.39031339031339,
+                "Z_C3": 25.05252100840336,
+                "Z_CK": 199.991452991453,
+                "Z_E1": 13.81067125645439,
+                "Z_E2": 13.536256323777403,
+                "Z_N1": 224.1860465116279,
+                "Z_N10": 225.91735537190084,
+                "Z_N2": 227.9320987654321,
+                "Z_N3": 234.33333333333334,
+                "Z_N4": 226.41044776119404,
+                "Z_N5": 222.1679389312977,
+                "Z_N6": 223.1917098445596,
+                "Z_N7": 221.14084507042253,
+                "Z_N8": 234.90740740740742,
+                "Z_N9": 225.89162561576356,
+                "Z_S1": 207.55102040816325,
+                "Z_S2": 202.0,
+                "Z_S3": 223.36065573770492,
+                "Z_S4": 214.6346153846154,
+                "Z_S5": 109.84931506849315,
+                "Z_S6": 211.35,
+                "Z_S7": 203.08064516129033
+            },
+            "teenager": {
+                "Z_C1": 25.13454861111111,
+                "Z_C2": 25.34021406727829,
+                "Z_C3": 24.75107913669065,
+                "Z_CK": 210.92285714285714,
+                "Z_E1": 14.063318777292576,
+                "Z_E2": 14.08254716981132,
+                "Z_N1": 197.0681818181818,
+                "Z_N10": 192.1413043478261,
+                "Z_N2": 175.61290322580646,
+                "Z_N3": 174.83333333333334,
+                "Z_N4": 186.88181818181818,
+                "Z_N5": 202.24550898203591,
+                "Z_N6": 180.21052631578948,
+                "Z_N7": 177.7310924369748,
+                "Z_N8": 176.56962025316454,
+                "Z_N9": 177.32432432432432,
+                "Z_S1": 179.04819277108433,
+                "Z_S2": 189.4,
+                "Z_S3": 172.98095238095237,
+                "Z_S4": 210.33766233766235,
+                "Z_S5": 113.28971962616822,
+                "Z_S6": 171.01639344262296,
+                "Z_S7": 183.76923076923077
+            },
+            "young_adult": {
+                "Z_C1": 26.167467398764586,
+                "Z_C2": 26.547867581270506,
+                "Z_C3": 25.009075439591605,
+                "Z_CK": 210.14022988505747,
+                "Z_E1": 14.162557077625571,
+                "Z_E2": 13.872280037842952,
+                "Z_N1": 189.8858024691358,
+                "Z_N10": 194.54195011337868,
+                "Z_N2": 185.66095890410958,
+                "Z_N3": 195.809667673716,
+                "Z_N4": 201.79400749063672,
+                "Z_N5": 199.83257918552036,
+                "Z_N6": 191.9071038251366,
+                "Z_N7": 206.1743119266055,
+                "Z_N8": 192.90843373493976,
+                "Z_N9": 197.7766497461929,
+                "Z_S1": 196.05741626794259,
+                "Z_S2": 196.1,
+                "Z_S3": 200.97727272727272,
+                "Z_S4": 195.44554455445544,
+                "Z_S5": 115.11070110701107,
+                "Z_S6": 194.0,
+                "Z_S7": 183.6209677419355
+            }
+        }
+    },
+    "anomalia": {
+        "status": "Success",
+        "target_day_evaluated": "2025-03-16",
+        "anomalies_detected": [
+            {
+                "zone_id": "Z_N6",
+                "hour": 17,
+                "baseline_mean": 24.166666666666668,
+                "baseline_std": 0.9831920802501747,
+                "day_7_value": 15,
+                "sigma_distance": 9.323373174786148,
+                "direction": "BELOW_EXPECTED"
+            },
+            {
+                "zone_id": "Z_N4",
+                "hour": 21,
+                "baseline_mean": 2.25,
+                "baseline_std": 0.5,
+                "day_7_value": 6,
+                "sigma_distance": 7.5,
+                "direction": "ABOVE_EXPECTED"
+            },
+            {
+                "zone_id": "Z_S4",
+                "hour": 21,
+                "baseline_mean": 1.25,
+                "baseline_std": 0.5,
+                "day_7_value": 4,
+                "sigma_distance": 5.5,
+                "direction": "ABOVE_EXPECTED"
+            },
+            {
+                "zone_id": "Z_N5",
+                "hour": 21,
+                "baseline_mean": 1.8,
+                "baseline_std": 0.4472135954999579,
+                "day_7_value": 4,
+                "sigma_distance": 4.919349550499538,
+                "direction": "ABOVE_EXPECTED"
+            },
+            {
+                "zone_id": "Z_S4",
+                "hour": 10,
+                "baseline_mean": 8.666666666666666,
+                "baseline_std": 1.5055453054181622,
+                "day_7_value": 16,
+                "sigma_distance": 4.870881870470524,
+                "direction": "ABOVE_EXPECTED"
+            },
+            {
+                "zone_id": "Z_N9",
+                "hour": 21,
+                "baseline_mean": 1.5,
+                "baseline_std": 0.8366600265340756,
+                "day_7_value": 5,
+                "sigma_distance": 4.183300132670378,
+                "direction": "ABOVE_EXPECTED"
+            },
+            {
+                "zone_id": "Z_S2",
+                "hour": 21,
+                "baseline_mean": 1.2,
+                "baseline_std": 0.4472135954999579,
+                "day_7_value": 3,
+                "sigma_distance": 4.024922359499621,
+                "direction": "ABOVE_EXPECTED"
+            },
+            {
+                "zone_id": "Z_S7",
+                "hour": 13,
+                "baseline_mean": 8.166666666666666,
+                "baseline_std": 1.7224014243685086,
+                "day_7_value": 15,
+                "sigma_distance": 3.967329123545441,
+                "direction": "ABOVE_EXPECTED"
+            },
+            {
+                "zone_id": "Z_N10",
+                "hour": 10,
+                "baseline_mean": 17.833333333333332,
+                "baseline_std": 1.6020819787597218,
+                "day_7_value": 24,
+                "sigma_distance": 3.849158000916217,
+                "direction": "ABOVE_EXPECTED"
+            },
+            {
+                "zone_id": "Z_S1",
+                "hour": 19,
+                "baseline_mean": 10.833333333333334,
+                "baseline_std": 1.6020819787597222,
+                "day_7_value": 17,
+                "sigma_distance": 3.8491580009162147,
+                "direction": "ABOVE_EXPECTED"
+            },
+            {
+                "zone_id": "Z_S4",
+                "hour": 13,
+                "baseline_mean": 13.666666666666666,
+                "baseline_std": 2.0655911179772892,
+                "day_7_value": 21,
+                "sigma_distance": 3.5502347340234652,
+                "direction": "ABOVE_EXPECTED"
+            },
+            {
+                "zone_id": "Z_N3",
+                "hour": 21,
+                "baseline_mean": 1.5,
+                "baseline_std": 0.7071067811865476,
+                "day_7_value": 4,
+                "sigma_distance": 3.5355339059327373,
+                "direction": "ABOVE_EXPECTED"
+            },
+            {
+                "zone_id": "Z_N4",
+                "hour": 10,
+                "baseline_mean": 12.5,
+                "baseline_std": 2.1679483388678804,
+                "day_7_value": 20,
+                "sigma_distance": 3.4594920301083185,
+                "direction": "ABOVE_EXPECTED"
+            },
+            {
+                "zone_id": "Z_N5",
+                "hour": 13,
+                "baseline_mean": 22.833333333333332,
+                "baseline_std": 3.656045222185671,
+                "day_7_value": 35,
+                "sigma_distance": 3.3278217109670063,
+                "direction": "ABOVE_EXPECTED"
+            },
+            {
+                "zone_id": "Z_C2",
+                "hour": 21,
+                "baseline_mean": 8.166666666666666,
+                "baseline_std": 2.48327740429189,
+                "day_7_value": 16,
+                "sigma_distance": 3.1544334595059147,
+                "direction": "ABOVE_EXPECTED"
+            },
+            {
+                "zone_id": "Z_S5",
+                "hour": 21,
+                "baseline_mean": 1.4,
+                "baseline_std": 0.5477225575051661,
+                "day_7_value": 3,
+                "sigma_distance": 2.921186973360886,
+                "direction": "ABOVE_EXPECTED"
+            },
+            {
+                "zone_id": "Z_N4",
+                "hour": 12,
+                "baseline_mean": 20.333333333333332,
+                "baseline_std": 2.6583202716502514,
+                "day_7_value": 28,
+                "sigma_distance": 2.8840267098092354,
+                "direction": "ABOVE_EXPECTED"
+            },
+            {
+                "zone_id": "Z_N9",
+                "hour": 13,
+                "baseline_mean": 21.166666666666668,
+                "baseline_std": 4.875106836436168,
+                "day_7_value": 34,
+                "sigma_distance": 2.632420942535659,
+                "direction": "ABOVE_EXPECTED"
+            },
+            {
+                "zone_id": "Z_N8",
+                "hour": 21,
+                "baseline_mean": 1.8,
+                "baseline_std": 0.8366600265340756,
+                "day_7_value": 4,
+                "sigma_distance": 2.6295029405356662,
+                "direction": "ABOVE_EXPECTED"
+            },
+            {
+                "zone_id": "Z_S3",
+                "hour": 21,
+                "baseline_mean": 1.6,
+                "baseline_std": 0.5477225575051661,
+                "day_7_value": 3,
+                "sigma_distance": 2.556038601690775,
+                "direction": "ABOVE_EXPECTED"
+            },
+            {
+                "zone_id": "Z_N3",
+                "hour": 19,
+                "baseline_mean": 18.166666666666668,
+                "baseline_std": 3.125166662222459,
+                "day_7_value": 26,
+                "sigma_distance": 2.506532988471938,
+                "direction": "ABOVE_EXPECTED"
+            },
+            {
+                "zone_id": "Z_S1",
+                "hour": 14,
+                "baseline_mean": 10.166666666666666,
+                "baseline_std": 6.047037842337906,
+                "day_7_value": 25,
+                "sigma_distance": 2.452991649808904,
+                "direction": "ABOVE_EXPECTED"
+            },
+            {
+                "zone_id": "Z_S5",
+                "hour": 12,
+                "baseline_mean": 15.666666666666666,
+                "baseline_std": 3.07679486912382,
+                "day_7_value": 23,
+                "sigma_distance": 2.3834326450959176,
+                "direction": "ABOVE_EXPECTED"
+            },
+            {
+                "zone_id": "Z_N1",
+                "hour": 14,
+                "baseline_mean": 14.666666666666666,
+                "baseline_std": 6.4394616752230665,
+                "day_7_value": 30,
+                "sigma_distance": 2.381151423313996,
+                "direction": "ABOVE_EXPECTED"
+            },
+            {
+                "zone_id": "Z_S6",
+                "hour": 21,
+                "baseline_mean": 1.75,
+                "baseline_std": 0.9574271077563381,
+                "day_7_value": 4,
+                "sigma_distance": 2.350048355401921,
+                "direction": "ABOVE_EXPECTED"
+            },
+            {
+                "zone_id": "Z_N1",
+                "hour": 20,
+                "baseline_mean": 9.833333333333334,
+                "baseline_std": 2.2286019533929036,
+                "day_7_value": 15,
+                "sigma_distance": 2.3183443139322155,
+                "direction": "ABOVE_EXPECTED"
+            },
+            {
+                "zone_id": "Z_C1",
+                "hour": 21,
+                "baseline_mean": 8.0,
+                "baseline_std": 2.6076809620810595,
+                "day_7_value": 14,
+                "sigma_distance": 2.3008949665421112,
+                "direction": "ABOVE_EXPECTED"
+            },
+            {
+                "zone_id": "Z_S5",
+                "hour": 19,
+                "baseline_mean": 12.5,
+                "baseline_std": 4.183300132670378,
+                "day_7_value": 22,
+                "sigma_distance": 2.270934357735348,
+                "direction": "ABOVE_EXPECTED"
+            },
+            {
+                "zone_id": "Z_S5",
+                "hour": 15,
+                "baseline_mean": 13.333333333333334,
+                "baseline_std": 3.8297084310253524,
+                "day_7_value": 22,
+                "sigma_distance": 2.263009527424072,
+                "direction": "ABOVE_EXPECTED"
+            },
+            {
+                "zone_id": "Z_C3",
+                "hour": 10,
+                "baseline_mean": 40.666666666666664,
+                "baseline_std": 5.240865068542279,
+                "day_7_value": 52,
+                "sigma_distance": 2.162492868087834,
+                "direction": "ABOVE_EXPECTED"
+            },
+            {
+                "zone_id": "Z_N8",
+                "hour": 19,
+                "baseline_mean": 17.166666666666668,
+                "baseline_std": 5.636192568273964,
+                "day_7_value": 29,
+                "sigma_distance": 2.0995260878670066,
+                "direction": "ABOVE_EXPECTED"
+            },
+            {
+                "zone_id": "Z_N3",
+                "hour": 15,
+                "baseline_mean": 13.0,
+                "baseline_std": 5.329165037789691,
+                "day_7_value": 24,
+                "sigma_distance": 2.0641132188622042,
+                "direction": "ABOVE_EXPECTED"
+            },
+            {
+                "zone_id": "Z_S4",
+                "hour": 12,
+                "baseline_mean": 12.666666666666666,
+                "baseline_std": 3.07679486912382,
+                "day_7_value": 19,
+                "sigma_distance": 2.058419102582838,
+                "direction": "ABOVE_EXPECTED"
+            },
+            {
+                "zone_id": "Z_N5",
+                "hour": 11,
+                "baseline_mean": 25.833333333333332,
+                "baseline_std": 3.5449494589721113,
+                "day_7_value": 33,
+                "sigma_distance": 2.021655527000011,
+                "direction": "ABOVE_EXPECTED"
+            },
+            {
+                "zone_id": "Z_N6",
+                "hour": 13,
+                "baseline_mean": 19.833333333333332,
+                "baseline_std": 5.076087732365021,
+                "day_7_value": 30,
+                "sigma_distance": 2.002854797375591,
+                "direction": "ABOVE_EXPECTED"
+            }
+        ]
+    }
+}

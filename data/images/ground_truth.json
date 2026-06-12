@@ -1,0 +1,1324 @@
+{
+  "images": [
+    {
+      "image_path": "data/images/ambiguo/test_1385.jpg",
+      "zone_id": "Z_S1",
+      "expected_issues": [
+        {
+          "type": "empty_shelf",
+          "location": "prateleira superior",
+          "severity": "low",
+          "confidence_min": 0.0,
+          "description_keywords": []
+        }
+      ],
+      "expected_status": "warning",
+      "expected_fill_rate_range": [
+        0.5,
+        0.8
+      ],
+      "expected_products": [
+        "leite",
+        "pão"
+      ]
+    },
+    {
+      "image_path": "data/images/ambiguo/test_1386.jpg",
+      "zone_id": "Z_S2",
+      "expected_issues": [
+        {
+          "type": "wrong_product",
+          "location": "prateleira do meio",
+          "severity": "medium",
+          "confidence_min": 0.0,
+          "description_keywords": []
+        }
+      ],
+      "expected_status": "warning",
+      "expected_fill_rate_range": [
+        0.5,
+        0.8
+      ],
+      "expected_products": [
+        "pão",
+        "queijo"
+      ]
+    },
+    {
+      "image_path": "data/images/ambiguo/test_1387.jpg",
+      "zone_id": "Z_S3",
+      "expected_issues": [
+        {
+          "type": "damaged",
+          "location": "prateleira inferior",
+          "severity": "high",
+          "confidence_min": 0.0,
+          "description_keywords": []
+        }
+      ],
+      "expected_status": "warning",
+      "expected_fill_rate_range": [
+        0.5,
+        0.8
+      ],
+      "expected_products": [
+        "queijo",
+        "iogurte"
+      ]
+    },
+    {
+      "image_path": "data/images/ambiguo/test_1388.jpg",
+      "zone_id": "Z_S4",
+      "expected_issues": [
+        {
+          "type": "misaligned",
+          "location": "lado esquerdo",
+          "severity": "low",
+          "confidence_min": 0.0,
+          "description_keywords": []
+        }
+      ],
+      "expected_status": "warning",
+      "expected_fill_rate_range": [
+        0.5,
+        0.8
+      ],
+      "expected_products": [
+        "iogurte",
+        "sumo"
+      ]
+    },
+    {
+      "image_path": "data/images/ambiguo/test_1389.jpg",
+      "zone_id": "Z_S5",
+      "expected_issues": [
+        {
+          "type": "label_missing",
+          "location": "lado direito",
+          "severity": "medium",
+          "confidence_min": 0.0,
+          "description_keywords": []
+        }
+      ],
+      "expected_status": "warning",
+      "expected_fill_rate_range": [
+        0.5,
+        0.8
+      ],
+      "expected_products": [
+        "sumo",
+        "água"
+      ]
+    },
+    {
+      "image_path": "data/images/ambiguo/test_139.jpg",
+      "zone_id": "Z_S6",
+      "expected_issues": [
+        {
+          "type": "empty_shelf",
+          "location": "centro",
+          "severity": "high",
+          "confidence_min": 0.0,
+          "description_keywords": []
+        }
+      ],
+      "expected_status": "warning",
+      "expected_fill_rate_range": [
+        0.5,
+        0.8
+      ],
+      "expected_products": [
+        "água",
+        "cereais"
+      ]
+    },
+    {
+      "image_path": "data/images/ambiguo/test_1390.jpg",
+      "zone_id": "Z_S7",
+      "expected_issues": [
+        {
+          "type": "wrong_product",
+          "location": "prateleira superior",
+          "severity": "low",
+          "confidence_min": 0.0,
+          "description_keywords": []
+        }
+      ],
+      "expected_status": "warning",
+      "expected_fill_rate_range": [
+        0.5,
+        0.8
+      ],
+      "expected_products": [
+        "cereais",
+        "massa"
+      ]
+    },
+    {
+      "image_path": "data/images/ambiguo/test_1391.jpg",
+      "zone_id": "Z_S1",
+      "expected_issues": [
+        {
+          "type": "damaged",
+          "location": "prateleira do meio",
+          "severity": "medium",
+          "confidence_min": 0.0,
+          "description_keywords": []
+        }
+      ],
+      "expected_status": "warning",
+      "expected_fill_rate_range": [
+        0.5,
+        0.8
+      ],
+      "expected_products": [
+        "massa",
+        "leite"
+      ]
+    },
+    {
+      "image_path": "data/images/ambiguo/test_1392.jpg",
+      "zone_id": "Z_S2",
+      "expected_issues": [
+        {
+          "type": "misaligned",
+          "location": "prateleira inferior",
+          "severity": "high",
+          "confidence_min": 0.0,
+          "description_keywords": []
+        }
+      ],
+      "expected_status": "warning",
+      "expected_fill_rate_range": [
+        0.5,
+        0.8
+      ],
+      "expected_products": [
+        "leite",
+        "pão"
+      ]
+    },
+    {
+      "image_path": "data/images/ambiguo/test_1393.jpg",
+      "zone_id": "Z_S3",
+      "expected_issues": [
+        {
+          "type": "label_missing",
+          "location": "lado esquerdo",
+          "severity": "low",
+          "confidence_min": 0.0,
+          "description_keywords": []
+        }
+      ],
+      "expected_status": "warning",
+      "expected_fill_rate_range": [
+        0.5,
+        0.8
+      ],
+      "expected_products": [
+        "pão",
+        "queijo"
+      ]
+    },
+    {
+      "image_path": "data/images/ambiguo/test_1394.jpg",
+      "zone_id": "Z_S4",
+      "expected_issues": [
+        {
+          "type": "empty_shelf",
+          "location": "lado direito",
+          "severity": "medium",
+          "confidence_min": 0.0,
+          "description_keywords": []
+        }
+      ],
+      "expected_status": "warning",
+      "expected_fill_rate_range": [
+        0.5,
+        0.8
+      ],
+      "expected_products": [
+        "queijo",
+        "iogurte"
+      ]
+    },
+    {
+      "image_path": "data/images/ambiguo/test_1395.jpg",
+      "zone_id": "Z_S5",
+      "expected_issues": [
+        {
+          "type": "wrong_product",
+          "location": "centro",
+          "severity": "high",
+          "confidence_min": 0.0,
+          "description_keywords": []
+        }
+      ],
+      "expected_status": "warning",
+      "expected_fill_rate_range": [
+        0.5,
+        0.8
+      ],
+      "expected_products": [
+        "iogurte",
+        "sumo"
+      ]
+    },
+    {
+      "image_path": "data/images/ambiguo/test_1396.jpg",
+      "zone_id": "Z_S6",
+      "expected_issues": [
+        {
+          "type": "damaged",
+          "location": "prateleira superior",
+          "severity": "low",
+          "confidence_min": 0.0,
+          "description_keywords": []
+        }
+      ],
+      "expected_status": "warning",
+      "expected_fill_rate_range": [
+        0.5,
+        0.8
+      ],
+      "expected_products": [
+        "sumo",
+        "água"
+      ]
+    },
+    {
+      "image_path": "data/images/ambiguo/test_1397.jpg",
+      "zone_id": "Z_S7",
+      "expected_issues": [
+        {
+          "type": "misaligned",
+          "location": "prateleira do meio",
+          "severity": "medium",
+          "confidence_min": 0.0,
+          "description_keywords": []
+        }
+      ],
+      "expected_status": "warning",
+      "expected_fill_rate_range": [
+        0.5,
+        0.8
+      ],
+      "expected_products": [
+        "água",
+        "cereais"
+      ]
+    },
+    {
+      "image_path": "data/images/ambiguo/test_1398.jpg",
+      "zone_id": "Z_S1",
+      "expected_issues": [
+        {
+          "type": "label_missing",
+          "location": "prateleira inferior",
+          "severity": "high",
+          "confidence_min": 0.0,
+          "description_keywords": []
+        }
+      ],
+      "expected_status": "warning",
+      "expected_fill_rate_range": [
+        0.5,
+        0.8
+      ],
+      "expected_products": [
+        "cereais",
+        "massa"
+      ]
+    },
+    {
+      "image_path": "data/images/ambiguo/test_1399.jpg",
+      "zone_id": "Z_S2",
+      "expected_issues": [
+        {
+          "type": "empty_shelf",
+          "location": "lado esquerdo",
+          "severity": "low",
+          "confidence_min": 0.0,
+          "description_keywords": []
+        }
+      ],
+      "expected_status": "warning",
+      "expected_fill_rate_range": [
+        0.5,
+        0.8
+      ],
+      "expected_products": [
+        "massa",
+        "leite"
+      ]
+    },
+    {
+      "image_path": "data/images/ambiguo/test_14.jpg",
+      "zone_id": "Z_S3",
+      "expected_issues": [
+        {
+          "type": "wrong_product",
+          "location": "lado direito",
+          "severity": "medium",
+          "confidence_min": 0.0,
+          "description_keywords": []
+        }
+      ],
+      "expected_status": "warning",
+      "expected_fill_rate_range": [
+        0.5,
+        0.8
+      ],
+      "expected_products": [
+        "leite",
+        "pão"
+      ]
+    },
+    {
+      "image_path": "data/images/ambiguo/test_140.jpg",
+      "zone_id": "Z_S4",
+      "expected_issues": [
+        {
+          "type": "damaged",
+          "location": "centro",
+          "severity": "high",
+          "confidence_min": 0.0,
+          "description_keywords": []
+        }
+      ],
+      "expected_status": "warning",
+      "expected_fill_rate_range": [
+        0.5,
+        0.8
+      ],
+      "expected_products": [
+        "pão",
+        "queijo"
+      ]
+    },
+    {
+      "image_path": "data/images/ambiguo/test_1400.jpg",
+      "zone_id": "Z_S5",
+      "expected_issues": [
+        {
+          "type": "misaligned",
+          "location": "prateleira superior",
+          "severity": "low",
+          "confidence_min": 0.0,
+          "description_keywords": []
+        }
+      ],
+      "expected_status": "warning",
+      "expected_fill_rate_range": [
+        0.5,
+        0.8
+      ],
+      "expected_products": [
+        "queijo",
+        "iogurte"
+      ]
+    },
+    {
+      "image_path": "data/images/ambiguo/test_1401.jpg",
+      "zone_id": "Z_S6",
+      "expected_issues": [
+        {
+          "type": "label_missing",
+          "location": "prateleira do meio",
+          "severity": "medium",
+          "confidence_min": 0.0,
+          "description_keywords": []
+        }
+      ],
+      "expected_status": "warning",
+      "expected_fill_rate_range": [
+        0.5,
+        0.8
+      ],
+      "expected_products": [
+        "iogurte",
+        "sumo"
+      ]
+    },
+    {
+      "image_path": "data/images/ambiguo/test_1402.jpg",
+      "zone_id": "Z_S7",
+      "expected_issues": [
+        {
+          "type": "empty_shelf",
+          "location": "prateleira inferior",
+          "severity": "high",
+          "confidence_min": 0.0,
+          "description_keywords": []
+        }
+      ],
+      "expected_status": "warning",
+      "expected_fill_rate_range": [
+        0.5,
+        0.8
+      ],
+      "expected_products": [
+        "sumo",
+        "água"
+      ]
+    },
+    {
+      "image_path": "data/images/ambiguo/test_1403.jpg",
+      "zone_id": "Z_S1",
+      "expected_issues": [
+        {
+          "type": "wrong_product",
+          "location": "lado esquerdo",
+          "severity": "low",
+          "confidence_min": 0.0,
+          "description_keywords": []
+        }
+      ],
+      "expected_status": "warning",
+      "expected_fill_rate_range": [
+        0.5,
+        0.8
+      ],
+      "expected_products": [
+        "água",
+        "cereais"
+      ]
+    },
+    {
+      "image_path": "data/images/ambiguo/test_1404.jpg",
+      "zone_id": "Z_S2",
+      "expected_issues": [
+        {
+          "type": "damaged",
+          "location": "lado direito",
+          "severity": "medium",
+          "confidence_min": 0.0,
+          "description_keywords": []
+        }
+      ],
+      "expected_status": "warning",
+      "expected_fill_rate_range": [
+        0.5,
+        0.8
+      ],
+      "expected_products": [
+        "cereais",
+        "massa"
+      ]
+    },
+    {
+      "image_path": "data/images/ambiguo/test_1405.jpg",
+      "zone_id": "Z_S3",
+      "expected_issues": [
+        {
+          "type": "misaligned",
+          "location": "centro",
+          "severity": "high",
+          "confidence_min": 0.0,
+          "description_keywords": []
+        }
+      ],
+      "expected_status": "warning",
+      "expected_fill_rate_range": [
+        0.5,
+        0.8
+      ],
+      "expected_products": [
+        "massa",
+        "leite"
+      ]
+    },
+    {
+      "image_path": "data/images/ambiguo/test_1406.jpg",
+      "zone_id": "Z_S4",
+      "expected_issues": [
+        {
+          "type": "label_missing",
+          "location": "prateleira superior",
+          "severity": "low",
+          "confidence_min": 0.0,
+          "description_keywords": []
+        }
+      ],
+      "expected_status": "warning",
+      "expected_fill_rate_range": [
+        0.5,
+        0.8
+      ],
+      "expected_products": [
+        "leite",
+        "pão"
+      ]
+    },
+    {
+      "image_path": "data/images/ambiguo/test_1407.jpg",
+      "zone_id": "Z_S5",
+      "expected_issues": [
+        {
+          "type": "empty_shelf",
+          "location": "prateleira do meio",
+          "severity": "medium",
+          "confidence_min": 0.0,
+          "description_keywords": []
+        }
+      ],
+      "expected_status": "warning",
+      "expected_fill_rate_range": [
+        0.5,
+        0.8
+      ],
+      "expected_products": [
+        "pão",
+        "queijo"
+      ]
+    },
+    {
+      "image_path": "data/images/ambiguo/test_1408.jpg",
+      "zone_id": "Z_S6",
+      "expected_issues": [
+        {
+          "type": "wrong_product",
+          "location": "prateleira inferior",
+          "severity": "high",
+          "confidence_min": 0.0,
+          "description_keywords": []
+        }
+      ],
+      "expected_status": "warning",
+      "expected_fill_rate_range": [
+        0.5,
+        0.8
+      ],
+      "expected_products": [
+        "queijo",
+        "iogurte"
+      ]
+    },
+    {
+      "image_path": "data/images/ambiguo/test_1409.jpg",
+      "zone_id": "Z_S7",
+      "expected_issues": [
+        {
+          "type": "damaged",
+          "location": "lado esquerdo",
+          "severity": "low",
+          "confidence_min": 0.0,
+          "description_keywords": []
+        }
+      ],
+      "expected_status": "warning",
+      "expected_fill_rate_range": [
+        0.5,
+        0.8
+      ],
+      "expected_products": [
+        "iogurte",
+        "sumo"
+      ]
+    },
+    {
+      "image_path": "data/images/ambiguo/test_141.jpg",
+      "zone_id": "Z_S1",
+      "expected_issues": [
+        {
+          "type": "misaligned",
+          "location": "lado direito",
+          "severity": "medium",
+          "confidence_min": 0.0,
+          "description_keywords": []
+        }
+      ],
+      "expected_status": "warning",
+      "expected_fill_rate_range": [
+        0.5,
+        0.8
+      ],
+      "expected_products": [
+        "sumo",
+        "água"
+      ]
+    },
+    {
+      "image_path": "data/images/ambiguo/test_1410.jpg",
+      "zone_id": "Z_S2",
+      "expected_issues": [
+        {
+          "type": "label_missing",
+          "location": "centro",
+          "severity": "high",
+          "confidence_min": 0.0,
+          "description_keywords": []
+        }
+      ],
+      "expected_status": "warning",
+      "expected_fill_rate_range": [
+        0.5,
+        0.8
+      ],
+      "expected_products": [
+        "água",
+        "cereais"
+      ]
+    },
+    {
+      "image_path": "data/images/ambiguo/test_1411.jpg",
+      "zone_id": "Z_S3",
+      "expected_issues": [
+        {
+          "type": "empty_shelf",
+          "location": "prateleira superior",
+          "severity": "low",
+          "confidence_min": 0.0,
+          "description_keywords": []
+        }
+      ],
+      "expected_status": "warning",
+      "expected_fill_rate_range": [
+        0.5,
+        0.8
+      ],
+      "expected_products": [
+        "cereais",
+        "massa"
+      ]
+    },
+    {
+      "image_path": "data/images/ambiguo/test_1412.jpg",
+      "zone_id": "Z_S4",
+      "expected_issues": [
+        {
+          "type": "wrong_product",
+          "location": "prateleira do meio",
+          "severity": "medium",
+          "confidence_min": 0.0,
+          "description_keywords": []
+        }
+      ],
+      "expected_status": "warning",
+      "expected_fill_rate_range": [
+        0.5,
+        0.8
+      ],
+      "expected_products": [
+        "massa",
+        "leite"
+      ]
+    },
+    {
+      "image_path": "data/images/ambiguo/test_1413.jpg",
+      "zone_id": "Z_S5",
+      "expected_issues": [
+        {
+          "type": "damaged",
+          "location": "prateleira inferior",
+          "severity": "high",
+          "confidence_min": 0.0,
+          "description_keywords": []
+        }
+      ],
+      "expected_status": "warning",
+      "expected_fill_rate_range": [
+        0.5,
+        0.8
+      ],
+      "expected_products": [
+        "leite",
+        "pão"
+      ]
+    },
+    {
+      "image_path": "data/images/ambiguo/test_1414.jpg",
+      "zone_id": "Z_S6",
+      "expected_issues": [
+        {
+          "type": "misaligned",
+          "location": "lado esquerdo",
+          "severity": "low",
+          "confidence_min": 0.0,
+          "description_keywords": []
+        }
+      ],
+      "expected_status": "warning",
+      "expected_fill_rate_range": [
+        0.5,
+        0.8
+      ],
+      "expected_products": [
+        "pão",
+        "queijo"
+      ]
+    },
+    {
+      "image_path": "data/images/ambiguo/test_1415.jpg",
+      "zone_id": "Z_S7",
+      "expected_issues": [
+        {
+          "type": "label_missing",
+          "location": "lado direito",
+          "severity": "medium",
+          "confidence_min": 0.0,
+          "description_keywords": []
+        }
+      ],
+      "expected_status": "warning",
+      "expected_fill_rate_range": [
+        0.5,
+        0.8
+      ],
+      "expected_products": [
+        "queijo",
+        "iogurte"
+      ]
+    },
+    {
+      "image_path": "data/images/ambiguo/test_1416.jpg",
+      "zone_id": "Z_S1",
+      "expected_issues": [
+        {
+          "type": "empty_shelf",
+          "location": "centro",
+          "severity": "high",
+          "confidence_min": 0.0,
+          "description_keywords": []
+        }
+      ],
+      "expected_status": "warning",
+      "expected_fill_rate_range": [
+        0.5,
+        0.8
+      ],
+      "expected_products": [
+        "iogurte",
+        "sumo"
+      ]
+    },
+    {
+      "image_path": "data/images/ambiguo/test_1417.jpg",
+      "zone_id": "Z_S2",
+      "expected_issues": [
+        {
+          "type": "wrong_product",
+          "location": "prateleira superior",
+          "severity": "low",
+          "confidence_min": 0.0,
+          "description_keywords": []
+        }
+      ],
+      "expected_status": "warning",
+      "expected_fill_rate_range": [
+        0.5,
+        0.8
+      ],
+      "expected_products": [
+        "sumo",
+        "água"
+      ]
+    },
+    {
+      "image_path": "data/images/ambiguo/test_1418.jpg",
+      "zone_id": "Z_S3",
+      "expected_issues": [
+        {
+          "type": "damaged",
+          "location": "prateleira do meio",
+          "severity": "medium",
+          "confidence_min": 0.0,
+          "description_keywords": []
+        }
+      ],
+      "expected_status": "warning",
+      "expected_fill_rate_range": [
+        0.5,
+        0.8
+      ],
+      "expected_products": [
+        "água",
+        "cereais"
+      ]
+    },
+    {
+      "image_path": "data/images/ambiguo/test_1419.jpg",
+      "zone_id": "Z_S4",
+      "expected_issues": [
+        {
+          "type": "misaligned",
+          "location": "prateleira inferior",
+          "severity": "high",
+          "confidence_min": 0.0,
+          "description_keywords": []
+        }
+      ],
+      "expected_status": "warning",
+      "expected_fill_rate_range": [
+        0.5,
+        0.8
+      ],
+      "expected_products": [
+        "cereais",
+        "massa"
+      ]
+    },
+    {
+      "image_path": "data/images/ambiguo/test_142.jpg",
+      "zone_id": "Z_S5",
+      "expected_issues": [
+        {
+          "type": "label_missing",
+          "location": "lado esquerdo",
+          "severity": "low",
+          "confidence_min": 0.0,
+          "description_keywords": []
+        }
+      ],
+      "expected_status": "warning",
+      "expected_fill_rate_range": [
+        0.5,
+        0.8
+      ],
+      "expected_products": [
+        "massa",
+        "leite"
+      ]
+    },
+    {
+      "image_path": "data/images/ambiguo/test_1420.jpg",
+      "zone_id": "Z_S6",
+      "expected_issues": [
+        {
+          "type": "empty_shelf",
+          "location": "lado direito",
+          "severity": "medium",
+          "confidence_min": 0.0,
+          "description_keywords": []
+        }
+      ],
+      "expected_status": "warning",
+      "expected_fill_rate_range": [
+        0.5,
+        0.8
+      ],
+      "expected_products": [
+        "leite",
+        "pão"
+      ]
+    },
+    {
+      "image_path": "data/images/ambiguo/test_1421.jpg",
+      "zone_id": "Z_S7",
+      "expected_issues": [
+        {
+          "type": "wrong_product",
+          "location": "centro",
+          "severity": "high",
+          "confidence_min": 0.0,
+          "description_keywords": []
+        }
+      ],
+      "expected_status": "warning",
+      "expected_fill_rate_range": [
+        0.5,
+        0.8
+      ],
+      "expected_products": [
+        "pão",
+        "queijo"
+      ]
+    },
+    {
+      "image_path": "data/images/ambiguo/test_1422.jpg",
+      "zone_id": "Z_S1",
+      "expected_issues": [
+        {
+          "type": "damaged",
+          "location": "prateleira superior",
+          "severity": "low",
+          "confidence_min": 0.0,
+          "description_keywords": []
+        }
+      ],
+      "expected_status": "warning",
+      "expected_fill_rate_range": [
+        0.5,
+        0.8
+      ],
+      "expected_products": [
+        "queijo",
+        "iogurte"
+      ]
+    },
+    {
+      "image_path": "data/images/ambiguo/test_1423.jpg",
+      "zone_id": "Z_S2",
+      "expected_issues": [
+        {
+          "type": "misaligned",
+          "location": "prateleira do meio",
+          "severity": "medium",
+          "confidence_min": 0.0,
+          "description_keywords": []
+        }
+      ],
+      "expected_status": "warning",
+      "expected_fill_rate_range": [
+        0.5,
+        0.8
+      ],
+      "expected_products": [
+        "iogurte",
+        "sumo"
+      ]
+    },
+    {
+      "image_path": "data/images/ambiguo/test_1424.jpg",
+      "zone_id": "Z_S3",
+      "expected_issues": [
+        {
+          "type": "label_missing",
+          "location": "prateleira inferior",
+          "severity": "high",
+          "confidence_min": 0.0,
+          "description_keywords": []
+        }
+      ],
+      "expected_status": "warning",
+      "expected_fill_rate_range": [
+        0.5,
+        0.8
+      ],
+      "expected_products": [
+        "sumo",
+        "água"
+      ]
+    },
+    {
+      "image_path": "data/images/ambiguo/test_1425.jpg",
+      "zone_id": "Z_S4",
+      "expected_issues": [
+        {
+          "type": "empty_shelf",
+          "location": "lado esquerdo",
+          "severity": "low",
+          "confidence_min": 0.0,
+          "description_keywords": []
+        }
+      ],
+      "expected_status": "warning",
+      "expected_fill_rate_range": [
+        0.5,
+        0.8
+      ],
+      "expected_products": [
+        "água",
+        "cereais"
+      ]
+    },
+    {
+      "image_path": "data/images/ambiguo/test_1426.jpg",
+      "zone_id": "Z_S5",
+      "expected_issues": [
+        {
+          "type": "wrong_product",
+          "location": "lado direito",
+          "severity": "medium",
+          "confidence_min": 0.0,
+          "description_keywords": []
+        }
+      ],
+      "expected_status": "warning",
+      "expected_fill_rate_range": [
+        0.5,
+        0.8
+      ],
+      "expected_products": [
+        "cereais",
+        "massa"
+      ]
+    },
+    {
+      "image_path": "data/images/ambiguo/test_1427.jpg",
+      "zone_id": "Z_S6",
+      "expected_issues": [
+        {
+          "type": "damaged",
+          "location": "centro",
+          "severity": "high",
+          "confidence_min": 0.0,
+          "description_keywords": []
+        }
+      ],
+      "expected_status": "warning",
+      "expected_fill_rate_range": [
+        0.5,
+        0.8
+      ],
+      "expected_products": [
+        "massa",
+        "leite"
+      ]
+    },
+    {
+      "image_path": "data/images/ambiguo/test_1428.jpg",
+      "zone_id": "Z_S7",
+      "expected_issues": [
+        {
+          "type": "misaligned",
+          "location": "prateleira superior",
+          "severity": "low",
+          "confidence_min": 0.0,
+          "description_keywords": []
+        }
+      ],
+      "expected_status": "warning",
+      "expected_fill_rate_range": [
+        0.5,
+        0.8
+      ],
+      "expected_products": [
+        "leite",
+        "pão"
+      ]
+    },
+    {
+      "image_path": "data/images/ambiguo/test_1429.jpg",
+      "zone_id": "Z_S1",
+      "expected_issues": [
+        {
+          "type": "label_missing",
+          "location": "prateleira do meio",
+          "severity": "medium",
+          "confidence_min": 0.0,
+          "description_keywords": []
+        }
+      ],
+      "expected_status": "warning",
+      "expected_fill_rate_range": [
+        0.5,
+        0.8
+      ],
+      "expected_products": [
+        "pão",
+        "queijo"
+      ]
+    },
+    {
+      "image_path": "data/images/ambiguo/test_143.jpg",
+      "zone_id": "Z_S2",
+      "expected_issues": [
+        {
+          "type": "empty_shelf",
+          "location": "prateleira inferior",
+          "severity": "high",
+          "confidence_min": 0.0,
+          "description_keywords": []
+        }
+      ],
+      "expected_status": "warning",
+      "expected_fill_rate_range": [
+        0.5,
+        0.8
+      ],
+      "expected_products": [
+        "queijo",
+        "iogurte"
+      ]
+    },
+    {
+      "image_path": "data/images/ambiguo/test_1430.jpg",
+      "zone_id": "Z_S3",
+      "expected_issues": [
+        {
+          "type": "wrong_product",
+          "location": "lado esquerdo",
+          "severity": "low",
+          "confidence_min": 0.0,
+          "description_keywords": []
+        }
+      ],
+      "expected_status": "warning",
+      "expected_fill_rate_range": [
+        0.5,
+        0.8
+      ],
+      "expected_products": [
+        "iogurte",
+        "sumo"
+      ]
+    },
+    {
+      "image_path": "data/images/ambiguo/test_1431.jpg",
+      "zone_id": "Z_S4",
+      "expected_issues": [
+        {
+          "type": "damaged",
+          "location": "lado direito",
+          "severity": "medium",
+          "confidence_min": 0.0,
+          "description_keywords": []
+        }
+      ],
+      "expected_status": "warning",
+      "expected_fill_rate_range": [
+        0.5,
+        0.8
+      ],
+      "expected_products": [
+        "sumo",
+        "água"
+      ]
+    },
+    {
+      "image_path": "data/images/ambiguo/test_1432.jpg",
+      "zone_id": "Z_S5",
+      "expected_issues": [
+        {
+          "type": "misaligned",
+          "location": "centro",
+          "severity": "high",
+          "confidence_min": 0.0,
+          "description_keywords": []
+        }
+      ],
+      "expected_status": "warning",
+      "expected_fill_rate_range": [
+        0.5,
+        0.8
+      ],
+      "expected_products": [
+        "água",
+        "cereais"
+      ]
+    },
+    {
+      "image_path": "data/images/ambiguo/test_1433.jpg",
+      "zone_id": "Z_S6",
+      "expected_issues": [
+        {
+          "type": "label_missing",
+          "location": "prateleira superior",
+          "severity": "low",
+          "confidence_min": 0.0,
+          "description_keywords": []
+        }
+      ],
+      "expected_status": "warning",
+      "expected_fill_rate_range": [
+        0.5,
+        0.8
+      ],
+      "expected_products": [
+        "cereais",
+        "massa"
+      ]
+    },
+    {
+      "image_path": "data/images/ambiguo/test_1434.jpg",
+      "zone_id": "Z_S7",
+      "expected_issues": [
+        {
+          "type": "empty_shelf",
+          "location": "prateleira do meio",
+          "severity": "medium",
+          "confidence_min": 0.0,
+          "description_keywords": []
+        }
+      ],
+      "expected_status": "warning",
+      "expected_fill_rate_range": [
+        0.5,
+        0.8
+      ],
+      "expected_products": [
+        "massa",
+        "leite"
+      ]
+    },
+    {
+      "image_path": "data/images/ambiguo/test_1435.jpg",
+      "zone_id": "Z_S1",
+      "expected_issues": [
+        {
+          "type": "wrong_product",
+          "location": "prateleira inferior",
+          "severity": "high",
+          "confidence_min": 0.0,
+          "description_keywords": []
+        }
+      ],
+      "expected_status": "warning",
+      "expected_fill_rate_range": [
+        0.5,
+        0.8
+      ],
+      "expected_products": [
+        "leite",
+        "pão"
+      ]
+    },
+    {
+      "image_path": "data/images/ambiguo/test_1436.jpg",
+      "zone_id": "Z_S2",
+      "expected_issues": [
+        {
+          "type": "damaged",
+          "location": "lado esquerdo",
+          "severity": "low",
+          "confidence_min": 0.0,
+          "description_keywords": []
+        }
+      ],
+      "expected_status": "warning",
+      "expected_fill_rate_range": [
+        0.5,
+        0.8
+      ],
+      "expected_products": [
+        "pão",
+        "queijo"
+      ]
+    },
+    {
+      "image_path": "data/images/ambiguo/test_1437.jpg",
+      "zone_id": "Z_S3",
+      "expected_issues": [
+        {
+          "type": "misaligned",
+          "location": "lado direito",
+          "severity": "medium",
+          "confidence_min": 0.0,
+          "description_keywords": []
+        }
+      ],
+      "expected_status": "warning",
+      "expected_fill_rate_range": [
+        0.5,
+        0.8
+      ],
+      "expected_products": [
+        "queijo",
+        "iogurte"
+      ]
+    },
+    {
+      "image_path": "data/images/ambiguo/test_1438.jpg",
+      "zone_id": "Z_S4",
+      "expected_issues": [
+        {
+          "type": "label_missing",
+          "location": "centro",
+          "severity": "high",
+          "confidence_min": 0.0,
+          "description_keywords": []
+        }
+      ],
+      "expected_status": "warning",
+      "expected_fill_rate_range": [
+        0.5,
+        0.8
+      ],
+      "expected_products": [
+        "iogurte",
+        "sumo"
+      ]
+    }
+  ]
+}
